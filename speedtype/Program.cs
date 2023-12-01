@@ -3,6 +3,7 @@ public class Program
 {
     private static string fileLocation = String.Empty;
     private static ConsoleColor standardForegroundColor = Console.ForegroundColor;
+    private static string[] content;
     public static void Main(string[] args)
     {
         if (args.Length < 1)
@@ -12,9 +13,10 @@ public class Program
         }
         fileLocation = args[0];
 
-        string[] content = File.ReadAllLines(fileLocation);
-        foreach (string word in content)
+        content = File.ReadAllLines(fileLocation);
+        while (true)
         {
+            string word = getNextWord();
             Console.WriteLine($"{word} ");
             string typedWord = String.Empty;
             for (int i = 0; i < word.Length; ++i)
@@ -31,9 +33,16 @@ public class Program
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
                 Console.Write(input);
-
             }
             Console.Clear();
         }
+    }
+
+    private static int currentListIndex = -1;
+    private static string getNextWord()
+    {
+        Random rand = new();
+        currentListIndex = (currentListIndex + rand.Next(1, content.Length)) % content.Length;
+        return content[currentListIndex];
     }
 }
