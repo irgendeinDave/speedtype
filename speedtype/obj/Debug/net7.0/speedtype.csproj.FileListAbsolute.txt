@@ -1,0 +1,14 @@
+/home/david/coding/C#/speedtype/speedtype/bin/Debug/net7.0/speedtype
+/home/david/coding/C#/speedtype/speedtype/bin/Debug/net7.0/speedtype.deps.json
+/home/david/coding/C#/speedtype/speedtype/bin/Debug/net7.0/speedtype.runtimeconfig.json
+/home/david/coding/C#/speedtype/speedtype/bin/Debug/net7.0/speedtype.dll
+/home/david/coding/C#/speedtype/speedtype/bin/Debug/net7.0/speedtype.pdb
+/home/david/coding/C#/speedtype/speedtype/obj/Debug/net7.0/speedtype.GeneratedMSBuildEditorConfig.editorconfig
+/home/david/coding/C#/speedtype/speedtype/obj/Debug/net7.0/speedtype.AssemblyInfoInputs.cache
+/home/david/coding/C#/speedtype/speedtype/obj/Debug/net7.0/speedtype.AssemblyInfo.cs
+/home/david/coding/C#/speedtype/speedtype/obj/Debug/net7.0/speedtype.csproj.CoreCompileInputs.cache
+/home/david/coding/C#/speedtype/speedtype/obj/Debug/net7.0/speedtype.dll
+/home/david/coding/C#/speedtype/speedtype/obj/Debug/net7.0/refint/speedtype.dll
+/home/david/coding/C#/speedtype/speedtype/obj/Debug/net7.0/speedtype.pdb
+/home/david/coding/C#/speedtype/speedtype/obj/Debug/net7.0/speedtype.genruntimeconfig.cache
+/home/david/coding/C#/speedtype/speedtype/obj/Debug/net7.0/ref/speedtype.dll
