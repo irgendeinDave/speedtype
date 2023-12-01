@@ -2,6 +2,7 @@
 public class Program
 {
     private static string fileLocation = String.Empty;
+    private static ConsoleColor standardForegroundColor = Console.ForegroundColor;
     public static void Main(string[] args)
     {
         if (args.Length < 1)
@@ -15,13 +16,24 @@ public class Program
         foreach (string word in content)
         {
             Console.WriteLine($"{word} ");
+            string typedWord = String.Empty;
             for (int i = 0; i < word.Length; ++i)
             {
-                char input = Console.ReadKey().KeyChar;
+                char input = Console.ReadKey(true).KeyChar;
+                typedWord += input;
+                Console.ForegroundColor = standardForegroundColor;
+                if (word[i] == input)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                }
+                Console.Write(input);
+
             }
             Console.Clear();
         }
-        
-        Console.WriteLine("Hello World");
     }
 }
