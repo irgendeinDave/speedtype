@@ -17,7 +17,7 @@ public class Program
         while (true)
         {
             string word = getNextWord();
-            Console.WriteLine($"{word} ");
+            Console.Write($" {word} ");
             string typedWord = String.Empty;
             for (int i = 0; i < word.Length; ++i)
             {
@@ -33,6 +33,7 @@ public class Program
                     Console.ForegroundColor = ConsoleColor.Red;
                 }
                 Console.Write(input);
+                Console.ForegroundColor = standardForegroundColor;
             }
             Console.Clear();
         }
