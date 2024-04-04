@@ -14,13 +14,18 @@ public class Program
         fileLocation = args[0];
 
         content = File.ReadAllLines(fileLocation);
+        Console.Clear();
+        int typedCharacters = 0;
         while (true)
         {
             string word = getNextWord();
-            Console.Write($" {word} ");
+            Console.Write(word + ' ');
+            
             string typedWord = String.Empty;
             for (int i = 0; i < word.Length; ++i)
             {
+                Console.SetCursorPosition(typedCharacters, 0);
+                typedCharacters++;
                 char input = Console.ReadKey(true).KeyChar;
                 typedWord += input;
                 Console.ForegroundColor = standardForegroundColor;
@@ -35,7 +40,10 @@ public class Program
                 Console.Write(input);
                 Console.ForegroundColor = standardForegroundColor;
             }
-            Console.Clear();
+
+            typedCharacters++;
+            Console.Write(' ');
+            //Console.Clear();
         }
     }
 
